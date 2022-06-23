@@ -1,0 +1,435 @@
+/* ----------------COMMON----------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #555;
+  background-color: #fff;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+#doctors img {
+  box-shadow: 2px 2px 2px 2px rgb(78, 102, 96);
+}
+
+.doc-detail {
+  justify-content: center;
+}
+
+#doctors h4 {
+  font-weight: bold;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto 0 auto;
+}
+
+section {
+  padding: 80px 0 80px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  /* text-transform: uppercase; */
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 120%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.clinic_name {
+  font-size: 300%;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: rgb(1, 73, 50);
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.description {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+}
+
+.box1 {
+  padding: 1%;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.icon-small {
+  display: inline;
+  width: 30px;
+  text-align: center;
+  color: rgb(1, 73, 50);
+  font-size: 120%;
+  margin-right: 10px;
+  line-height: 120%;
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------- HEADER -------------------------------------------------- */
+
+header {
+  background-image: linear-gradient(rgba(0, 27, 18, 0.7), rgba(0, 56, 53, 0.7)),
+    url(img/2000.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* ----------------------------Navigation------------------------------------ */
+
+.row-top {
+  max-width: 100%;
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ul {
+  float: right;
+} */
+
+.logo,
+.logo-black {
+  height: 140px;
+  width: auto;
+  margin-top: 15px;
+  /* display: none; */
+  /* float: left; */
+  position: absolute;
+  left: 10px;
+}
+
+.logo-2 {
+  display: none;
+}
+
+.main-nav {
+  list-style: none;
+  margin-top: 35px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 80%;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+  padding-bottom: 5px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid rgb(38, 138, 103);
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+/* ------------------sticky nav------------------------ */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+  height: 60px;
+}
+
+.sticky .main-nav {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #555;
+  /* background-color: rgb(255, 255, 255, 0.9); */
+  border-radius: 1px;
+  padding-bottom: 5px;
+}
+.sticky .logo-1 {
+  display: none;
+}
+.sticky .logo-2 {
+  display: block;
+}
+.sticky .logo-black {
+  margin-bottom: 5px;
+  height: 50px;
+  width: auto;
+  margin-top: 5px;
+}
+
+/* ------------------Burger menu------------------------ */
+
+.burger-menu {
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.burger-menu i {
+  font-size: 150%;
+  color: #fff;
+}
+
+/* -----------------------------------------Button CSS----------------------------------------------------------- */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 450;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #fff;
+  margin: 10px;
+  /* transition: background-color 0.2s, border 0.2s, color 0.2s; */
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: rgb(0, 41, 38);
+  border: 2px solid rgb(145, 164, 182);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 2px solid rgb(0, 30, 58);
+  color: rgb(0, 30, 58);
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(243, 243, 243);
+  color: rgb(0, 30, 58);
+  /* font-size: 30px; */
+  transition: 0.3s;
+}
+.btn-full:hover,
+.btn-full:active {
+  border: 2px solid rgb(0, 30, 58);
+  transition: 0.3s;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 2px solid rgb(0, 30, 58);
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* ---------------Services------------ */
+
+.box {
+  padding: 1%;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  height: 150px;
+  margin-bottom: 5px;
+  border-radius: 5%;
+  box-shadow: 0 5px 5px #efefef;
+}
+
+.services-icon {
+  margin: 20px auto;
+  height: 40px;
+  width: 40px;
+}
+
+/* ------------GALLERY--------- */
+#gallery {
+  padding-bottom: 5px;
+  background-color: rgb(239, 243, 248);
+}
+
+.gallery-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.gallery-showcase li {
+  display: inline-block;
+  margin-right: -3px;
+  width: 25%;
+}
+
+.gallery-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.gallery-photo img {
+  opacity: 0.9;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.gallery-photo img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* ----------------DOCTORS------------------------ */
+#doctors {
+  background-color: rgb(239, 243, 248);
+  padding-bottom: 40px;
+}
+
+
+.box1 img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+  border-radius: 40px;
+}
+
+.doc-detail {
+  margin-bottom: 5px;
+  font-size: 100%;
+}
+
+/* ----------------TESTIMONIALS------------------------ */
+
+#testimonials {
+  background-image: linear-gradient(rgba(0, 37, 54, 0.8), rgba(0, 22, 29, 0.8)),
+    url(img/children-child-boy-girl.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+  margin-top: -5px;
+  padding-bottom: 30px;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 400%;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+cite img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* ---------------- Contact Us------------------------ */
+
+#contact {
+  color: rgb(239, 243, 248);
+  background-color: rgb(18, 19, 20);
+}
+
+#address {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#timing {
+  text-align: center;
+  margin: 9px;
+}
+
+#contact-no {
+  text-align: center;
+  margin: 9px;
+}
+
+/* ---------------- FOOTER ------------------------ */
+footer {
+  background-color: rgb(33, 51, 48);
+}
+
+footer p {
+  color: rgb(189, 189, 189);
+  text-align: center;
+  font-size: 70%;
+  margin: 30px;
+}

@@ -1,0 +1,156 @@
+/* Really small phones */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+/* Small phone and small tablets */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+  section {
+    padding: 35px 0 35px 0;
+  }
+  #Services {
+    text-align: center;
+  }
+
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+  .col {
+    width: 100%;
+  }
+
+  .box {
+    margin: 0 20% 4px 20%;
+    padding: 0;
+    width: 60%;
+  }
+
+  .gallery-showcase li {
+    display: inline-block;
+    margin-right: -3px;
+    width: 100%;
+  }
+
+  .box1 {
+    padding: 1%;
+    text-align: center;
+  }
+
+  .box1 img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .cite {
+    margin-bottom: 3px;
+  }
+}
+
+/*Burger Menu*/
+@media only screen and (max-width: 840px) {
+  .logo {
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+  }
+
+  .row-top {
+    justify-content: right;
+  }
+
+  .burger-menu {
+    display: inline-block;
+    margin-top: 25px;
+  }
+  .main-nav {
+    display: none;
+  }
+  .main-nav {
+    float: left;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 5px 0;
+  }
+
+  .sticky .burger-menu {
+    display: inline-block;
+    margin-top: 14px;
+  }
+
+  .sticky .main-nav {
+    float: left;
+    margin: 10px 0 10px 0;
+  }
+
+  .sticky .main-nav li {
+    display: block;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    display: block;
+    border: 0;
+  }
+
+  .sticky .burger-menu i {
+    color: #555;
+  }
+}
+
+/* Small to big tablets */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 17px;
+  }
+  .icon-small {
+    width: 17px;
+    font-size: 100%;
+    margin-right: 4px;
+  }
+  .doc-detail {
+    font-size: 90%;
+  }
+  .description {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #service {
+    padding-top: 0;
+  }
+  section {
+    padding: 50px 0 50px 0;
+  }
+}
+
+/* Big tabs to small laptop screens */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+
+  .doc-detail {
+    font-size: 80%;
+  }
+}
