@@ -118,10 +118,28 @@ header {
     /* url(img/2000.jpg); */
     background-color: rgb(255, 255, 255);
   height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
   /* text-align: center; */
+  /* display: block;
+  justify-content: center;
+  align-items: center; */
+}
+
+
+ .heroTB_and_Picture{
+   display: flex; 
+   margin-top: 150px;
+   max-width: 100%;
+   justify-content: center;
+} 
+
+.hero-text-box {
+  /* width: 45%; */
+  width: 500px;
+  text-align: left;
+  margin-top: 50px;
 }
 
 .Picture{
@@ -129,28 +147,21 @@ header {
   height: 417px;
 }
 
-.hero-text-box {
-  width: 45%;
-  text-align: left;
-  margin-top: 50px;
-}
 
- .heroTB_and_Picture{
-   display: flex; 
-   margin-top: 150px;
-   /* width: 100%; */
-   margin-left: 10%;
-} 
-
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 600px){
+  .header{
+    text-align: center;
+  }
   .heroTB_and_Picture{
     display: block; 
+    max-width: 100%;
+    justify-content: center;
  } 
 
  .Picture{
   width: 300px;
   height: 250px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
  }
 
  .hero-text-box {
