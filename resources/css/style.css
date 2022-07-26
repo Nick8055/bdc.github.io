@@ -116,8 +116,8 @@ h4 {
 header {
   /* background-image: linear-gradient(rgba(0, 27, 18, 0.7), rgba(0, 56, 53, 0.7)), */
     /* url(img/2000.jpg); */
-    background-color: rgb(255, 255, 255);
-  /* height: 100vh; */
+  background-color: rgb(255, 255, 255);
+  height: 900px;
   /* background-size: cover; */
   /* background-position: center; */
   /* background-attachment: fixed; */
@@ -125,6 +125,7 @@ header {
   /* display: block;
   justify-content: center;
   align-items: center; */
+  padding-bottom: 50px;
 }
 
 
@@ -143,15 +144,51 @@ header {
 }
 
 .Picture{
-  width: 500px;
-  height: 417px;
+  width: 600px;
+  height: 382px;
+}
+
+@media only screen and (max-width: 700px){
+  .header{
+    text-align: center;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-height: 600px){
+  .header{
+    text-align: center;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-height: 500px){
+  .header{
+    text-align: center;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-height: 400px){
+  .header{
+    text-align: center;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 300px){
+  .header{
+    text-align: center;
+    height: 300px;
+  }
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
   .header{
     text-align: center;
-    height: 100vh;
+    height: 800px;
+    /* height: 100vh; */
   }
   .heroTB_and_Picture{
     display: block; 
@@ -160,13 +197,14 @@ header {
  } 
 
  .Picture{
-  width: 300px;
-  height: 250px;
+  width: 350px;
+  height: 222px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   justify-content: center;
+  margin-top: 20px;
  }
 
  .hero-text-box {
